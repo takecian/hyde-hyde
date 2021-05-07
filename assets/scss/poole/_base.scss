@@ -22,6 +22,9 @@ html {
   @media (min-width: $large-breakpoint) {
     font-size: $large-font-size;
   }
+  @media (prefers-color-scheme: dark) {
+    filter: invert(1) hue-rotate(180deg);
+  }
 }
 
 body {
